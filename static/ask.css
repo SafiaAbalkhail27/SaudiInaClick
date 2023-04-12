@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Libre+Franklin:wght@200;300;400;500;600;800&family=Mada:wght@300;400;500&display=swap');
+
+
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(Milky-Way-Mosaab-Alkilabi.jpg);
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    margin: 0;
+    padding:0;  
+ 
+}
+.sec1 {
+    height: fit-content;
+    padding: 5%;
+    width: 55%;
+    background: white;
+    background: linear-gradient(
+    to top left,
+    rgba(15, 0, 43, 0.368),
+    rgba(36, 15, 15, 0.573),
+    rgba(15, 0, 43, 0.368)
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.197);
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  margin: 0;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 50px;
+    z-index: 0;
+
+}
+
+
+
+h1 {
+    font-family: 'Mada';
+    font-size: 2.9rem;
+    width: 100%;
+    margin: 0 100px;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Mada';
+    font-size: 0.8em;
+    margin: 0 100px;
+}
+
+input[type="text"] {
+    width: 70%;
+    border-radius: 30px;
+    padding: 15px 30px;
+    margin: 0 100px;
+    border: none;
+    outline: none;
+    font-family: 'Mada';
+    font-weight: 700;
+    caret-shape: bold;
+    margin-top: 20px;
+}
+
+.answer {
+    background: linear-gradient(
+    to top left,
+    rgba(255, 255, 255, 0.368),
+    rgba(170, 2, 185, 0.315),
+    rgba(255, 255, 255, 0.368)
+  );
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.197);
+  z-index: 2;
+  backdrop-filter: blur(5px);
+  width: 70%;
+  margin: 0 100px;
+    padding: 30px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  text-align: left;
+  margin-top: 30px;
+  transition-duration: 0.2s;
+}
+
+#hide {
+    max-height: 0;
+    transition: max-height 0.15s ease-out;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#show {
+    max-height: fit-content;
+    transition: max-height 0.25s ease-in;
+    visibility: visible;
+}
+
+.answer p {
+    margin: 0;
+    padding: 10px;
+}
+
+#spinner {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.589);
+    position: absolute;
+    z-index: 2;
+    visibility: hidden;
+
+
+}
+
+.spinner-border span{
+    position: absolute;
+    left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  min-width: 500px; /* Need a specific value to work */
+}
+
+.spin{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -20px;
+    margin-left: -25px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
+
+.record-form {
+    height: fit-content;
+    max-height: 200;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    flex: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 70%;
+    align-self: center;
+    padding: 5%;
+    margin-top: 30px;
+}
+
+.record-form img {
+    max-width: 50px;
+    margin-right: 20px;
+}
+
+.record-form h2 {
+    font-size: 1.2em;
+    color: black;
+    font-family: 'Mada';
+    font-weight: 700;
+}
+.record-form:hover {
+    cursor: pointer;
+}
+
+#stopR {
+    display:none;
+    visibility: hidden;
+}

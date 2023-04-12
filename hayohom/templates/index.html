@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+   
+
+    <title>Hayohom - welcoming</title>
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="{% static 'Landscapes of Saudi.mp4' %}" type="video/mp4">
+    </video>
+    
+    <div class="container">
+
+        <div class="box">
+            <img src="{%static 'logo white.png'%}" alt="">
+            <h1>GET READY TO DIVE INTO THE EXPERIENCE WITH ONE CLICK!</h1>
+            <p>our chatbot is designed to guide you to experience the best of saudi cultures, adventures, festivals, nature and seasons.</p>
+            <a href="ask"><input type="button" value="Get started"></a>
+        </div>
+    </div>
+</body>
+</html>
