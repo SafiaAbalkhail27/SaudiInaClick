@@ -1,0 +1,1 @@
+web: gunicorn hayohom_proj.wsgi
